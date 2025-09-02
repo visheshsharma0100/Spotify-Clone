@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="icon" type="image/x-icon" href="assets/OIP.jpeg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+</head>
+
+<body>
+    <div class="container flex bg-black">
+        <div class="left m-1 ">
+            <div class="close">
+                <img class="invert" src="assets/close.svg" alt="Close" srcset="">
+            </div>
+            <div class=" home p-1 m-1 bg-grey rounded">
+                <div class="logo"><img width="130" class="invert" src="assets/logo (1).svg" alt="Logo"></div>
+                <ul>
+                    <li>
+                        <img src="assets/home.svg" alt="Home" class="invert">
+                        <span>Home</span>
+                    </li>
+                    <li>
+                        <img src="assets/search.svg" alt="Search" class="invert">
+                        <span>Search</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="library p-1 m-1 bg-grey rounded">
+                <div class="heading">
+                    <img src="assets/playlist.svg" alt="Playlist" class="invert">
+                    <h2>Your Library</h2>
+                </div>
+                <div class="songList">
+                    <ul>
+
+                    </ul>
+                </div>
+                <div class="footer ">
+                    <div><a href="https://www.spotify.com/jp/legal/"><span>Legal</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/privacy/"><span>Privacy Center</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/legal/privacy-policy/"><span>Privacy Policy</span></a>
+                    </div>
+                    <div><a href="https://www.spotify.com/jp/legal/cookies-policy/"><span>Cookies</span></a></div>
+                    <div><a href="https://www.spotify.com/jp/legal/privacy-policy/#s3"><span>About Ads</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="right rounded bg-grey ">
+            <div class="header">
+                <div class="nav">
+                    <div class="hamburger-container">
+                        <img width="50" class="invert hamburger" src="assets/hamburger.svg" alt="hamburger menu"
+                            width="24px">
+
+                        <img class="invert" src="assets/left-arrow-backup-2-svgrepo-com.svg" alt="left arrow"
+                            width="24px" srcset="">
+                        <img class="invert" src="assets/right-arrow-backup-2-svgrepo-com.svg" alt="right arrow"
+                            width="24px" srcset="">
+                    </div>
+                </div>
+                <div class="button">
+                    <button class="signUpbtn">Sign up</button>
+                    <button class="logInbtn">Log in</button>
+                </div>
+            </div>
+            <div class="SpotifyPlaylists">
+                <h1>Spotify Playlists</h1>
+                <div class="card-container">
+                    <div data-folder="karan" class="card">
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 64 64">
+                                <!-- Spotify green circular background -->
+                                <circle cx="32" cy="32" r="32" fill="#1DB954" />
+
+                                <!-- Solid black play icon -->
+                                <polygon points="24,18 24,46 46,32" fill="black" />
+                            </svg>
+                        </div>
+                        <img src="assets/karan.jpeg" alt="Making Memories">
+                        <h3>Making Memories</h3>
+                        <p>Karan Aujla , Ikki</p>
+                    </div>
+                    <div data-folder="Arijit" class="card">
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 64 64">
+                                <!-- Spotify green circular background -->
+                                <circle cx="32" cy="32" r="32" fill="#1DB954" />
+
+                                <!-- Solid black play icon -->
+                                <polygon points="24,18 24,46 46,32" fill="black" />
+                            </svg>
+                        </div>
+                        <img src="assets/Arijit.jpeg" alt="SAYIAARA">
+                        <h3>Best of Arijit Singh</h3>
+                        <p>Arijit Singh ,Pritam</p>
+                    </div>
+                    <div data-folder="Diljjit" class="card">
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 64 64">
+                                <!-- Spotify green circular background -->
+                                <circle cx="32" cy="32" r="32" fill="#1DB954" />
+
+                                <!-- Solid black play icon -->
+                                <polygon points="24,18 24,46 46,32" fill="black" />
+                            </svg>
+                        </div>
+                        <img src="assets/sardar.jpg" alt="Diljit Dosanjh">
+                        <h3>The Next Level</h3>
+                        <p>Diljit Dosanjh</p>
+                    </div>
+                    <div data-folder="honey" class="card">
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 64 64">
+                                <!-- Spotify green circular background -->
+                                <circle cx="32" cy="32" r="32" fill="#1DB954" />
+
+                                <!-- Solid black play icon -->
+                                <polygon points="24,18 24,46 46,32" fill="black" />
+                            </svg>
+                        </div>
+                        <img src="assets/yoyo.jpg" alt="Honey">
+                        <h3>Glory of Honey Singh</h3>
+                        <p>Honey Singh</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="playbar">
+        <div class="seekbar">
+            <div class="circle"></div>
+        </div>
+        <div class="abovebar">
+            <div class="songInfo"></div>
+            <div class="songsbtn">
+                <img width="34" id="previous" src="assets/prevsong (1).svg" alt="previous song" width="24px">
+                <img width="34" id="play" src="assets/play (1).svg" alt="play" width="24px">
+                <img width="34" id="next" src="assets/nextsong (1).svg" alt="next song" width="24px">
+            </div>
+            <div class="time-volume">
+                <div class="songTime"></div>
+                <div class="volume">
+                    <input type="range" min="0" max="100" value="50">
+                    <img src="assets/volume.svg" alt="volume">
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.border {
+    border: 2px solid red;
+}
+
+.flex {
+    display: flex;
+}
+
+.justify-content {
+    justify-content: center;
+}
+
+.align-items {
+    align-items: center;
+}
+
+
+.bg-black {
+    background-color: black;
+    color: white;
+}
+
+.invert {
+    filter: invert(1);
+}
+
+.bg-grey {
+    background-color: #121212;
+}
+
+.rounded {
+    border-radius: 8px;
+}
+
+.m-1 {
+    margin: 5px;
+}
+
+.p-1 {
+    padding: 5px;
+}
+
+.heading img {
+    width: 24px;
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    width: 100%;
+    padding: 23px 14px;
+    font-weight: bold;
+
+}
+
+.library {
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.heading h2 {
+    font-size: 17px;
+}
+
+/* For Chrome, Edge, Safari */
+::-webkit-scrollbar {
+    width: 12px;
+    /* width of vertical scrollbar */
+    height: 12px;
+    /* height of horizontal scrollbar */
+}
+
+::-webkit-scrollbar-track {
+    background: #111;
+    /* dark track background */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #333;
+    /* scrollbar handle */
+    border-radius: 6px;
+    /* rounded edges */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+    /* hover effect */
+}
+
+/* For Firefox */
+* {
+    scrollbar-width: thin;
+    /* "auto" or "thin" */
+    scrollbar-color: #333 #111;
+    /* thumb color + track color */
+}
